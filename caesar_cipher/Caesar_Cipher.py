@@ -36,6 +36,7 @@ def count_words(txt):
 
 def crack(encrypted_txt):
     length=len(encrypted_txt.split())
+    decrypt_word="the percentage was less than 50%"
     for i in range(length):
         decrypted = decrypt(encrypted_txt, i)
         word_count = count_words(decrypted)

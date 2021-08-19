@@ -22,3 +22,5 @@ def test_encrypt_capital():
 def test_crack():
     assert crack("Mx aew xli fiwx sj xmqiw, mx aew xli asvwx sj xmqiw")== "It was the best of times, it was the worst of times"
 
+def test_crack_perc_less_than_fifty():
+    assert crack("15 ljmphsbnfa")== "the percentage was less than 50%"
